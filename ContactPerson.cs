@@ -28,21 +28,7 @@ namespace AddressBookSystem
             this.email = email;
 
         }
-        public void MentionDetails()
-        {
-
-            Console.WriteLine("Enter all thecontact details");
-            firstName = Console.ReadLine();
-            lastName = Console.ReadLine();
-            address = Console.ReadLine();
-            city = Console.ReadLine();
-            state = Console.ReadLine();
-            zip = Convert.ToInt32(Console.ReadLine());
-            phoneNo = Convert.ToDouble(Console.ReadLine());
-            email = Console.ReadLine();
-
-        }
-
+       
 
 
 
