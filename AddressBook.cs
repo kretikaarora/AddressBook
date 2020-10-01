@@ -9,16 +9,27 @@ namespace AddressBookSystem
     public class AddressBook
     {
         private List<ContactPerson> addressBookList;
+        
         public AddressBook()
         {
+            
             addressBookList = new List<ContactPerson>();
+
 
         }
         public void AddDetailsOfPersons(string firstName, string lastName, string address, string city, string state, int zip, double phoneNo, string eMail)
         {
+           
             ContactPerson contactPerson = new ContactPerson(firstName, lastName, address, city, state, zip, phoneNo, eMail);
             addressBookList.Add(contactPerson);
+            
+
         }
+
+        //public void AddMultipleDictionaries()
+
+
+
 
         public void DisplayContactPersonDetails()
         {
@@ -27,18 +38,18 @@ namespace AddressBookSystem
             {
 
                 Console.WriteLine("The Details of Contact Number {0} -", numberOfPersons);
-                Console.WriteLine("firstName : " + contactPerson.firstName + "  last name  :" + contactPerson.lastName + " address : " + contactPerson.address + " city : " + contactPerson.city + " state : " + contactPerson.state + "  zip : " + contactPerson.zip +  " phone number : " + contactPerson.phoneNo + "  email :" + contactPerson.email);
+                Console.WriteLine("firstName : " + contactPerson.firstName + "  last name  :" + contactPerson.lastName + " address : " + contactPerson.address + " city : " + contactPerson.city + " state : " + contactPerson.state + "  zip : " + contactPerson.zip + " phone number : " + contactPerson.phoneNo + "  email :" + contactPerson.email);
                 numberOfPersons++;
                 Console.WriteLine("******************************************************************************************");
             }
         }
 
-        public void UpdateContactPersonDetails(string newFirstName,string newLastName)
+        public void UpdateContactPersonDetails(string newFirstName, string newLastName)
         {
-            
+
             foreach (ContactPerson contactPerson in addressBookList)
             {
-                if(newFirstName==contactPerson.firstName &&  newLastName==contactPerson.lastName )
+                if (newFirstName == contactPerson.firstName && newLastName == contactPerson.lastName)
                 {
                     Console.WriteLine("Enter the details to be updated");
                     contactPerson.address = Console.ReadLine();
@@ -52,7 +63,7 @@ namespace AddressBookSystem
                     DisplayContactPersonDetails();
 
                 }
-               
+
             }
         }
         public void DeleteContactPersonDetails(string fName, string lName)
@@ -69,9 +80,10 @@ namespace AddressBookSystem
 
                 }
             }
-               
+
         }
-        Console.ReadKey();
+
 
     }
 }
+
