@@ -27,17 +27,15 @@ namespace AddressBookSystem
             {
 
                 Console.WriteLine("The Details of Contact Number {0} -", numberOfPersons);
-                Console.WriteLine(" the first name is : " + contactPerson.firstName + " \n the last name is :" + contactPerson.lastName + "\n the address is : " + contactPerson.address + " \n the city is : " + contactPerson.city + " \n the state is " + contactPerson.state + "\n the zip is :" + contactPerson.zip + "\n the phone number is : " + contactPerson.phoneNo + " \n the email is :" + contactPerson.email);
+                Console.WriteLine("firstName : " + contactPerson.firstName + "  last name  :" + contactPerson.lastName + " address : " + contactPerson.address + " city : " + contactPerson.city + " state : " + contactPerson.state + "  zip : " + contactPerson.zip +  " phone number : " + contactPerson.phoneNo + "  email :" + contactPerson.email);
                 numberOfPersons++;
                 Console.WriteLine("******************************************************************************************");
             }
         }
 
-        public void UpdateContactPersonDetails()
+        public void UpdateContactPersonDetails(string newFirstName,string newLastName)
         {
-            Console.WriteLine("enter the first name & last name of the person to be updated");
-            string newFirstName = Console.ReadLine();
-            string newLastName = Console.ReadLine();
+            
             foreach (ContactPerson contactPerson in addressBookList)
             {
                 if(newFirstName==contactPerson.firstName &&  newLastName==contactPerson.lastName )
@@ -50,10 +48,30 @@ namespace AddressBookSystem
                     contactPerson.phoneNo = Convert.ToDouble(Console.ReadLine());
                     contactPerson.email = Console.ReadLine();
                     Console.WriteLine("details has been updated");
+                    Console.WriteLine("the updated list is-");
+                    DisplayContactPersonDetails();
+
+                }
+               
+            }
+        }
+        public void DeleteContactPersonDetails(string fName, string lName)
+
+        {
+            foreach (ContactPerson contactPerson in addressBookList)
+            {
+                if (fName == contactPerson.firstName && lName == contactPerson.lastName)
+                {
+                    addressBookList.Remove(contactPerson);
+                    Console.WriteLine("contact person deleted");
+                    Console.WriteLine("updated list is ");
+                    DisplayContactPersonDetails();
 
                 }
             }
+               
         }
+        Console.ReadKey();
 
     }
 }

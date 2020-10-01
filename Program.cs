@@ -29,9 +29,28 @@ namespace AddressBookSystem
 
                 addressBook.AddDetailsOfPersons(firstName, lastName, address, city, state, zip, phoneNo, eMail);
             }
+
+           
             addressBook.DisplayContactPersonDetails();
-            addressBook.UpdateContactPersonDetails();
-            addressBook.DisplayContactPersonDetails();
+            Console.WriteLine("To update  details Enter 'YES' or else 'NO' ");
+            string updateCheck = Console.ReadLine();
+            if(updateCheck =="YES")
+            {
+                Console.WriteLine("enter the first name & last name of the person to be updated");
+                string newFirstName = Console.ReadLine();
+                string newLastName = Console.ReadLine();
+                addressBook.UpdateContactPersonDetails(newFirstName, newLastName);
+            }
+            Console.WriteLine("To delete Details enter 'Y' else enter 'N' ");
+            char deleteCheck= Convert.ToChar(Console.ReadLine());
+            if (deleteCheck == 'Y')
+            {
+                Console.WriteLine("enter the first name & last name of the person contact to be delete  ");
+                string fName= Console.ReadLine();
+                string lName= Console.ReadLine();
+                addressBook.DeleteContactPersonDetails(fName, lName);
+
+            }
 
         }
     }
