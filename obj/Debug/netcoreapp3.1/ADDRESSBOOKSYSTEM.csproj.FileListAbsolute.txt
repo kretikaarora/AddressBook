@@ -1,0 +1,13 @@
+C:\Users\Administrator\Desktop\AddressBookSystem1\ADDRESSBOOKSYSTEM\ADDRESSBOOKSYSTEM\bin\Debug\netcoreapp3.1\ADDRESSBOOKSYSTEM.exe
+C:\Users\Administrator\Desktop\AddressBookSystem1\ADDRESSBOOKSYSTEM\ADDRESSBOOKSYSTEM\bin\Debug\netcoreapp3.1\ADDRESSBOOKSYSTEM.deps.json
+C:\Users\Administrator\Desktop\AddressBookSystem1\ADDRESSBOOKSYSTEM\ADDRESSBOOKSYSTEM\bin\Debug\netcoreapp3.1\ADDRESSBOOKSYSTEM.runtimeconfig.json
+C:\Users\Administrator\Desktop\AddressBookSystem1\ADDRESSBOOKSYSTEM\ADDRESSBOOKSYSTEM\bin\Debug\netcoreapp3.1\ADDRESSBOOKSYSTEM.runtimeconfig.dev.json
+C:\Users\Administrator\Desktop\AddressBookSystem1\ADDRESSBOOKSYSTEM\ADDRESSBOOKSYSTEM\bin\Debug\netcoreapp3.1\ADDRESSBOOKSYSTEM.dll
+C:\Users\Administrator\Desktop\AddressBookSystem1\ADDRESSBOOKSYSTEM\ADDRESSBOOKSYSTEM\bin\Debug\netcoreapp3.1\ADDRESSBOOKSYSTEM.pdb
+C:\Users\Administrator\Desktop\AddressBookSystem1\ADDRESSBOOKSYSTEM\ADDRESSBOOKSYSTEM\obj\Debug\netcoreapp3.1\ADDRESSBOOKSYSTEM.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\AddressBookSystem1\ADDRESSBOOKSYSTEM\ADDRESSBOOKSYSTEM\obj\Debug\netcoreapp3.1\ADDRESSBOOKSYSTEM.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\AddressBookSystem1\ADDRESSBOOKSYSTEM\ADDRESSBOOKSYSTEM\obj\Debug\netcoreapp3.1\ADDRESSBOOKSYSTEM.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\AddressBookSystem1\ADDRESSBOOKSYSTEM\ADDRESSBOOKSYSTEM\obj\Debug\netcoreapp3.1\ADDRESSBOOKSYSTEM.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\AddressBookSystem1\ADDRESSBOOKSYSTEM\ADDRESSBOOKSYSTEM\obj\Debug\netcoreapp3.1\ADDRESSBOOKSYSTEM.dll
+C:\Users\Administrator\Desktop\AddressBookSystem1\ADDRESSBOOKSYSTEM\ADDRESSBOOKSYSTEM\obj\Debug\netcoreapp3.1\ADDRESSBOOKSYSTEM.pdb
+C:\Users\Administrator\Desktop\AddressBookSystem1\ADDRESSBOOKSYSTEM\ADDRESSBOOKSYSTEM\obj\Debug\netcoreapp3.1\ADDRESSBOOKSYSTEM.genruntimeconfig.cache
