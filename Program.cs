@@ -30,6 +30,8 @@ namespace AddressBookSystem
                 addressBook.AddDetailsOfPersons(firstName, lastName, address, city, state, zip, phoneNo, eMail);
             }
             addressBook.DisplayContactPersonDetails();
+            addressBook.UpdateContactPersonDetails();
+            addressBook.DisplayContactPersonDetails();
 
         }
     }

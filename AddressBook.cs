@@ -24,8 +24,6 @@ namespace AddressBookSystem
         {
             int numberOfPersons = 1;
             foreach (ContactPerson contactPerson in addressBookList)
-
-
             {
 
                 Console.WriteLine("The Details of Contact Number {0} -", numberOfPersons);
@@ -35,6 +33,27 @@ namespace AddressBookSystem
             }
         }
 
+        public void UpdateContactPersonDetails()
+        {
+            Console.WriteLine("enter the first name & last name of the person to be updated");
+            string newFirstName = Console.ReadLine();
+            string newLastName = Console.ReadLine();
+            foreach (ContactPerson contactPerson in addressBookList)
+            {
+                if(newFirstName==contactPerson.firstName &&  newLastName==contactPerson.lastName )
+                {
+                    Console.WriteLine("Enter the details to be updated");
+                    contactPerson.address = Console.ReadLine();
+                    contactPerson.city = Console.ReadLine();
+                    contactPerson.state = Console.ReadLine();
+                    contactPerson.zip = Convert.ToInt32(Console.ReadLine());
+                    contactPerson.phoneNo = Convert.ToDouble(Console.ReadLine());
+                    contactPerson.email = Console.ReadLine();
+                    Console.WriteLine("details has been updated");
+
+                }
+            }
+        }
 
     }
 }
